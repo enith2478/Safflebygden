@@ -1,0 +1,124 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #f1fbff;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+header{
+    background: no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+}
+.color-overlay{
+    min-height: 60vh;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.card_preview-text{
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.gall {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(1) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  .column img:hover {
+    filter: grayscale(0);
+  }
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  
+/* ==== responsivitet ==== */
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+   
+    .card{
+        margin-bottom: 30px;
+    }
+
+    .img-area{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    
+    .about-text{
+        padding-top: 50px;
+    }
+    
+    .card{
+        margin-bottom: 30px;
+    }
+   .mob{
+    margin-top: 2rem;
+    margin-left: 2rem;
+   }
+    
+}
